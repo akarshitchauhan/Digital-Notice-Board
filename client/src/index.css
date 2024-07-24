@@ -59,6 +59,25 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+::-webkit-scrollbar {
+  width: 12px; /* Change the width as desired */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5ebcee; /* Color of the thumb */
+  border-radius: 4px; /* Roundness of the thumb */
+  border: 3px solid #f1f1f1; /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1690f5; /* Color of the thumb on hover */
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

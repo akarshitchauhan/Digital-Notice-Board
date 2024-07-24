@@ -58,19 +58,19 @@ function Pomodoro() {
     <div className="flex flex-row items-center p-2 rounded-xl text-white max-w-max max-h-max">
       <div className="text-center w-32 mb-8">
         <p
-          className={`text-xl mb-4 cursor-pointer ${mode === 'Pomodoro' ? 'bg-blue-700 p-2 rounded-3xl' : ''}`}
+          className={`text-xl mb-4 cursor-pointer ${mode === 'Pomodoro' ? 'bg-blue-700 p-2 rounded-3xl shadow-xl' : ''}`}
           onClick={() => handleModeChange('Pomodoro')}
         >
           Pomodoro
         </p>
         <p
-          className={`text-xl mb-4 cursor-pointer ${mode === 'shortBreak' ? 'bg-blue-700 p-2 rounded-3xl' : ''}`}
+          className={`text-xl mb-4 cursor-pointer ${mode === 'shortBreak' ? 'bg-blue-700 p-2 rounded-3xl shadow-xl' : ''}`}
           onClick={() => handleModeChange('shortBreak')}
         >
           Short break
         </p>
         <p
-          className={`text-xl cursor-pointer ${mode === 'longBreak' ? 'bg-blue-700 p-2 rounded-3xl' : ''}`}
+          className={`text-xl cursor-pointer ${mode === 'longBreak' ? 'bg-blue-700 p-2 rounded-3xl shadow-xl' : ''}`}
           onClick={() => handleModeChange('longBreak')}
         >
           Long break
@@ -81,20 +81,20 @@ function Pomodoro() {
           <p className="text-2xl p-2 mb-0 mr-4">{formatTime(timer)}</p>
           <div className="w-full bg-gray-300 rounded-full h-2.5">
             <div
-              className="bg-green-400 h-2.5 rounded-full"
+              className="bg-green-400 h-2.5 rounded-full shadow-xl"
               style={{ width: `${progressPercentage}%` }}
             ></div>
           </div>
         </div>
         <div className="mt-4">
           <button
-            className="bg-white hover:bg-blue-600 hover:text-white text-blue-500 rounded-3xl mr-2"
+            className="bg-white hover:bg-blue-600 hover:text-white text-blue-500 rounded-3xl shadow-xl mr-2"
             onClick={handleStartStop}
           >
             {isRunning ? 'Stop' : hasStarted ? 'Continue' : 'Start'}
           </button>
           <button
-            className="bg-white hover:bg-blue-500 hover:text-white text-blue-500 rounded-3xl"
+            className="bg-white hover:bg-blue-500 hover:text-white text-blue-500 rounded-3xl shadow-xl"
             onClick={handleReset}
           >
             Reset
