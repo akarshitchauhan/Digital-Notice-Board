@@ -1,11 +1,10 @@
-
 const GoogleSlideEmbed = ({ embedUrl }) => {
   return (
-    <div className="h-1/2 bg-blue-600 rounded-xl">
-      <div className="w-full">
+    <div className="h-[40%] bg-blue-600 rounded-xl overflow-hidden">
+      <div className="w-full h-full">
         <iframe
           src={embedUrl}
-          className="w-full h-[28rem] border-0 rounded-3xl"
+          className="w-full h-full border-0"
           allowFullScreen
           title="Google Slides"
         ></iframe>

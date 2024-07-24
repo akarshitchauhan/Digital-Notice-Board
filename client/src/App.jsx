@@ -5,6 +5,7 @@ import Notes from "./components/Notes";
 import Opportunity from "./components/Opportunity";
 import TextBox from "./components/TextBox";
 import MeetWidget from "./components/MeetWidget";
+import Polls from "./components/Polls";
 
 function App() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -30,11 +31,13 @@ function App() {
           <Opportunity />
           <MeetWidget />
         </div>
-        <div className="w-1/2 h-1/2">
+        <div className="w-1/2 h-screen">
           <GoogleSlideEmbed embedUrl={googleSlideUrl} />
+          <Polls />
         </div>
       </div>
-      <Notes />
+
+      {/* <Notes /> */}
     </div>
   );
 }
