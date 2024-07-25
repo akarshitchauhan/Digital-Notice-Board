@@ -1,6 +1,6 @@
 import express from "express";
 import { createServer } from "http";
-import dotenv from "dotenv/config";
+
 import setupSocket from "./socket.js";
 import pollRoutes from "./routes/pollSystemRoutes.js";
 import cors from "cors";
@@ -15,7 +15,10 @@ const io = setupSocket(server);
 
 // CORS configuration options
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: [
+    "http://localhost:5173",
+    "chrome-extension://njdhjlkfbinmakpnbiakfbbcahjodhaf",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
