@@ -42,8 +42,8 @@ const GoogleMeetWidget = () => {
   };
 
   return (
-    <div className="google-meet-widget p-4 bg-white shadow-md rounded-lg">
-      <h2 className="text-xl font-bold mb-2 text-blue-500">Google Meet Widget</h2>
+    <div className="google-meet-widget p-4 ml-16 w-96 bg-white shadow-xl rounded-3xl">
+      <h2 className="text-xl font-bold mb-2 text-blue-500">Upcoming Events</h2>
       {!authenticated && (
         <button
           className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"

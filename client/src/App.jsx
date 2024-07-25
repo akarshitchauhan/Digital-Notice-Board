@@ -3,6 +3,7 @@ import Pomodoro from "./components/Pomodoro";
 import GoogleSlideEmbed from "./components/GoogleSlideEmbed";
 import GoogleMeetWidget from "./components/GoogleMeetWidget";
 import Notes from "./components/Notes";
+import TIL from "./components/TIL";
 import Opportunity from "./components/Opportunity";
 import TextBox from "./components/TextBox";
 import MeetWidget from "./components/MeetWidget";
@@ -21,6 +22,7 @@ function App() {
     Opportunity: true,
     MeetWidget: true,
     TIL: true,
+    Notes: true,
     GoogleSlides: true,
     Polls: true,
   });
@@ -53,7 +55,10 @@ function App() {
             {widgets.Opportunity && <Opportunity />}
             {widgets.MeetWidget && <GoogleMeetWidget />}
           </div>
-          {widgets.TIL && <Notes />}
+          <div className="flex flex-row justify-between">
+          {widgets.TIL && <TIL />}
+          {widgets.Notes && <Notes />}
+          </div>
         </div>
         <div className="w-1/2 flex justify-end h-screen">
           <div className="flex flex-col">

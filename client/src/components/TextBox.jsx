@@ -24,7 +24,7 @@ const TextBox = () => {
   };
 
   return (
-    <div className="p-4 mt-2 ml-24">
+    <div className="p-4 mt-2 ml-16">
       <input
         type="text"
         value={query}
