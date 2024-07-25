@@ -17,11 +17,11 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [widgets, setWidgets] = useState({
     Pomodoro: true,
-    TextBox: true,
+    SearchBox: true,
     Opportunity: true,
     MeetWidget: true,
-    Notes: true,
-    GoogleSlideEmbed: true,
+    TIL: true,
+    GoogleSlides: true,
     Polls: true,
   });
 
@@ -44,18 +44,20 @@ function App() {
       <div className="flex justify-between items-start p-4">
         <div className="ml-2">
           <div className="flex flex-row">
-            {widgets.Pomodoro && <Pomodoro />}
-            {widgets.TextBox && <TextBox />}
+            <div className="w-[24rem] h-44">
+              {widgets.Pomodoro && <Pomodoro />}
+            </div>
+            {widgets.SearchBox && <TextBox />}
           </div>
           <div className="flex flex-row justify-between">
             {widgets.Opportunity && <Opportunity />}
             {widgets.MeetWidget && <GoogleMeetWidget />}
           </div>
-          {widgets.Notes && <Notes />}
+          {widgets.TIL && <Notes />}
         </div>
         <div className="w-1/2 flex justify-end h-screen">
           <div className="flex flex-col">
-            {widgets.GoogleSlideEmbed && <GoogleSlideEmbed embedUrl={googleSlideUrl} />}
+            {widgets.GoogleSlides && <GoogleSlideEmbed embedUrl={googleSlideUrl} />}
             {widgets.Polls && <Polls />}
           </div>
         </div>
