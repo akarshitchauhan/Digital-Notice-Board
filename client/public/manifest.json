@@ -1,16 +1,20 @@
 {
-    "manifest_version": 3,
-    "name": "Time Display Extension",
-    "description": "Shows the current time on the new tab page of Chrome.",
-    "version": "1.0",
-    "chrome_url_overrides": {
-      "newtab": "index.html"
-    },
-    "permissions": [
-      "activeTab"
-    ],
-    "icons": {
-      "128": "icon.png"
-    }
+  "manifest_version": 3,
+  "name": "Time Display Extension",
+  "description": "Shows the current time on the new tab page of Chrome.",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["identity", "activeTab"],
+  "action": {
+    
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
   }
-  
+}

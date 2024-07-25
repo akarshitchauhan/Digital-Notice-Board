@@ -9,6 +9,7 @@ import {
   updateDoc,
   getDocs,
   runTransaction,
+  deleteDoc,
 } from "firebase/firestore/lite";
 
 const router = express.Router();
@@ -21,6 +22,7 @@ router.post("/create", async (req, res) => {
       question,
       options,
       votes: Array(options.length).fill(0),
+      createdAt: new Date().toISOString(),
     });
     res.status(201).json({ id: pollRef.id });
   } catch (error) {

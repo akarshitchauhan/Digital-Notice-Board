@@ -6,6 +6,7 @@ import Opportunity from "./components/Opportunity";
 import TextBox from "./components/TextBox";
 import MeetWidget from "./components/MeetWidget";
 import Polls from "./components/Polls";
+import GoogleMeetWidget from "./components/GoogleMeetWidget";
 
 function App() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -30,7 +31,7 @@ function App() {
           </div>
           <div className="flex flex-row justify-between">
             <Opportunity />
-            <MeetWidget />
+            <GoogleMeetWidget/>
           </div>
           <Notes />
         </div>
