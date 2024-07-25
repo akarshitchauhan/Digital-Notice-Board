@@ -21,7 +21,7 @@ const Opportunity = () => {
       ];
       
   return (
-    <div className="fixed h-80 w-80 p-4 bg-white rounded-3xl shadow-lg overflow-hidden">
+    <div className="h-80 w-[24rem] p-4 bg-white rounded-3xl shadow-lg overflow-hidden">
       <h2 className="text-xl text-white font-bold bg-black p-2 rounded-t-lg">Opportunity Board</h2>
       <div className="h-full overflow-y-auto bg-white p-2 rounded-b-lg">
         {opportunities.map((opportunity) => (

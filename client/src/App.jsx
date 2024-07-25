@@ -21,23 +21,28 @@ function App() {
     "https://docs.google.com/presentation/d/e/2PACX-1vS6qTgQIXPQKdrD6vd9_ZUuAzTFJupHZH9xmOwftEZpmLaBliTDOQ-zOt246h2ulkCh9g7_EGoOSKhJ/embed?start=true&loop=true&delayms=5000";
 
   return (
-    <div className="relative flex flex-col h-screen w-screen bg-gradient-to-r from-blue-500 to-white">
+    <div className="relative flex flex-col h-screen w-screen bg-gradient-to-r from-blue-500 to-white overflow-hidden">
       <div className="flex justify-between items-start p-4">
-        <div className="">
+        <div className="ml-2">
           <div className="flex flex-row">
             <Pomodoro />
             <TextBox />
           </div>
-          <Opportunity />
-          <MeetWidget />
+          <div className="flex flex-row justify-between">
+            <Opportunity />
+            <MeetWidget />
+          </div>
+          <Notes />
         </div>
-        <div className="w-1/2 h-screen">
-          <GoogleSlideEmbed embedUrl={googleSlideUrl} />
-          <Polls />
+        <div className="w-1/2 flex justify-end h-screen">
+          <div className="flex flex-col">
+            <GoogleSlideEmbed embedUrl={googleSlideUrl} />
+            <Polls />
+          </div>
         </div>
       </div>
 
-      {/* <Notes /> */}
+
     </div>
   );
 }

@@ -87,8 +87,8 @@ const Polls = () => {
   };
 
   return (
-    <div className="h-[50vh] overflow-auto p-4 bg-gray-100 my-4 rounded-xl">
-      <div className="bg-white shadow-md rounded-lg p-6 mb-4">
+    <div className="h-1/2 mb-8 w-[40rem] overflow-auto shadow-xl p-4 bg-gray-100 my-4 rounded-3xl">
+      <div className="bg-white shadow-md rounded-lg p-6 mb-2">
         <h2 className="text-xl font-semibold mb-4 text-black">Current Polls</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -146,7 +146,7 @@ const Polls = () => {
       </div>
       <div className="w-full flex justify-center">
         <button
-          className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mb-4 mx-auto"
+          className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4 mx-auto"
           onClick={() => setShowCreatePoll(true)}
         >
           Create Poll

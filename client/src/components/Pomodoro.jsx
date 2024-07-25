@@ -55,7 +55,7 @@ function Pomodoro() {
   const progressPercentage = ((initialTimes[mode] - timer) / initialTimes[mode]) * 100;
 
   return (
-    <div className="flex flex-row items-center p-2 rounded-xl text-white max-w-max max-h-max">
+    <div className="flex flex-row justify-between items-center p-2 rounded-xl text-white w-[24rem] max-h-max">
       <div className="text-center w-32 mb-8">
         <p
           className={`text-xl mb-4 cursor-pointer ${mode === 'Pomodoro' ? 'bg-blue-700 p-2 rounded-3xl shadow-xl' : ''}`}
@@ -76,7 +76,7 @@ function Pomodoro() {
           Long break
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center p-4 rounded-lg">
+      <div className="flex flex-col items-center justify-center p-4 mb-2 rounded-lg">
         <div>
           <p className="text-2xl p-2 mb-0 mr-4">{formatTime(timer)}</p>
           <div className="w-full bg-gray-300 rounded-full h-2.5">

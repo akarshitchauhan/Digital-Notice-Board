@@ -24,7 +24,7 @@ const TextBox = () => {
   };
 
   return (
-    <div className="p-4 mt-2 ml-12">
+    <div className="p-4 mt-2 ml-24">
       <input
         type="text"
         value={query}
@@ -33,7 +33,7 @@ const TextBox = () => {
         placeholder="  Search with Google"
         className="w-80 bg-white text-black p-2 border rounded-3xl shadow-xl"
       />
-      <div className="mt-4 ml-16">
+      <div className="mt-4 ml-20">
         <h2 className="text-xl ml-8 text-black">{time.toLocaleTimeString()}</h2>
         <h3 className="text-lg text-gray-700">
           {time.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
