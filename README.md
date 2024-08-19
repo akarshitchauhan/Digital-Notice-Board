@@ -30,7 +30,7 @@ This project is a digital notice board implemented as a Chrome extension. It emb
 
 1. Open Chrome and go to `chrome://extensions/`.
 2. Enable "Developer mode" by toggling the switch in the top right corner.
-3. Click on "Load unpacked" and select the `build` folder from the project directory.
+3. Click on "Load unpacked" and select the `dist` folder from the project directory.
 4. Open a new tab in Chrome to see the activated extension.
 
 
