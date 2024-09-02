@@ -33,4 +33,6 @@ This project is a digital notice board implemented as a Chrome extension. It emb
 3. Click on "Load unpacked" and select the `dist` folder from the project directory.
 4. Open a new tab in Chrome to see the activated extension.
 
+![IMG-20240726-WA0001](https://github.com/user-attachments/assets/b56259ce-1865-4bc4-9137-9017edb6969c)
+
 
